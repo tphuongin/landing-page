@@ -1,0 +1,24 @@
+@import url("./pages/home.css");
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100;300;400;500;700&display=swap');
+body{
+    margin: 0%;
+    font-family: 'League Gothic';
+}
+
+.display-flex{
+    display: flex;
+    align-items: center;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+

@@ -1,0 +1,1017 @@
+header.home-page{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 94%;
+    z-index: 1000;
+    height: 80px;
+    background-color: #d87093;
+    font-weight: bolder;
+    color:white;
+    padding-left: 3%;
+    padding-right: 3%;
+    letter-spacing: 2px;
+}
+
+
+.dimmed{ 
+    pointer-events: none;
+}
+#legue-of-legends-logo{
+    height: 3.4rem;
+}
+
+#logo-riotgames{
+    height: 2.5rem;
+}
+
+.riotgames{
+    width: 8%;
+    font-size: 1.1rem;
+    justify-content: center;
+    cursor: pointer;  /* Mouse pointer on hover */
+}
+
+
+.riotgames-menu{
+    width: 77%;
+    justify-content:space-around;
+    font-size: 1rem;
+}
+
+.icon-button{
+    width: 15%;
+    justify-content:space-evenly;
+}
+
+.fa-solid{
+    color:rgb(230, 216, 216);
+}
+
+
+.play-now{
+    padding: 3%;
+    background-color: #f7ade7;  /* Green background */
+    color: white;  /* White text */
+    border: none;
+    border-radius: 10px;  /* Rounded corners */
+    cursor: pointer;  /* Mouse pointer on hover */
+    transition:  0.2s ease;
+    font-size: 1rem;
+}
+
+.play-now:hover{
+    color:#6e384a;
+}
+
+.cursion-menu{
+    cursor: pointer;
+}
+
+.video-game{
+    width: 100%;
+    object-fit: cover; /* Giữ chiều cao, cắt hai bên khi thu nhỏ */
+    min-height: 100vh;
+    position: relative;
+}
+
+#league-of-legends {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    cursor: pointer;
+}
+
+#play-for-free{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 25px;
+    background-color: #d87093;
+    outline: 1px solid white;
+    border: none;
+    outline-offset: 2px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.dropdown{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #f7ade7;
+    width: 130px;
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: white solid 5px;
+    border-radius: 7px;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.content-dropdown{
+    padding: 7px 5px 7px 5px;
+    color: aliceblue;
+}
+
+
+.news-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* Ngay dưới phần NEWS */
+    left: 0;
+    width: 100%;
+    height: 30px; /* Tạo khoảng cách 30px */
+    background: transparent; 
+}
+
+.news-dropdown:hover .display-news-dropdown{
+    display: flex;
+}
+
+.discover-dropdown::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.discover-dropdown:hover .display-discover-dropdown{
+    display: flex;
+}
+
+.more-dropdown::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.more-dropdown:hover .display-more-dropdown{
+    display: flex;
+    transition: 0.2s ease;
+}
+
+.content-dropdown:hover{
+    background-color: #f69cba;
+    border-radius: 6px;
+    transition: 0.2s ease;
+}
+
+.hover-content{
+    padding: 10px;
+}
+
+.hover-content:hover{
+    background-color: #f69cba;
+    border-radius: 6px;
+    border-bottom:white solid 2px;
+    transition: 0.2s ease;
+}
+
+
+.riotgames img{
+    transition: transform 0.6s ease-in-out;
+    border-radius: 15px;
+}
+
+.riotgames:hover img{
+    transform: rotate(360deg);
+}
+
+.riotgames:hover span,
+.riotgames:hover i{
+    color: yellow;
+}
+
+.riotgames-click{
+    z-index: 2000;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: #d87093;
+    padding-left: 3%;
+    padding-right: 3%;
+    letter-spacing: 2px;
+    color:white;
+    padding-top: 20px;
+    width: 94%;
+    height: 75%;
+    transition: top 0.3s ease;
+    pointer-events: auto !important;
+
+}
+
+.fa-circle-xmark{
+    font-size:20px;
+    align-self: baseline;
+    cursor: pointer;
+}
+
+#riotgames-click-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 10%;
+}
+
+#riotgames-click-banner{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height:90%;
+}
+
+#img-container1{
+    height: 50%;
+}
+#img-container2{
+    height: 50%;
+}
+
+.riotgames-click-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 100%;
+}
+
+.topic{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.title{
+    padding: 10px;
+    background-color: #f7ade7;
+    border-radius: 8px;
+    font-size:large;
+    font-weight: bold;
+}
+
+.description{
+    padding: 10px;
+    font-size: 1.1rem;
+    margin-top: 3px;
+}
+
+.riotgames-click-image{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.description:hover{
+    background-color: #eec2e2;
+    border-radius: 7px;
+}
+
+.riotgames-click-image img{
+    max-width: 100%;
+    border-radius: 7px;
+}
+
+.img-title{
+    letter-spacing: 1px;
+}
+
+.description:hover .img-title{
+    display: none;
+}
+
+.responsive-header{
+    width: 92%;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+}
+.adapted-logo{
+    height: 45px;
+}
+
+.button-responsive{
+    display: flex;
+    gap: 30px;
+}
+
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f7ade7;
+    width: 500px;
+    height: 90vh;
+    overflow-y: auto; /* Thanh cuộn theo chiều dọc */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    padding: 10px;
+    display: none;
+    pointer-events: auto !important;
+}
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-sidebar{
+    background-color: #d87093;
+    border:none;
+    outline: none;
+    width: 87%;
+    color: white;
+}
+.sidebar-search{
+    margin: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d87093;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.sidebar-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-sidebar{
+    padding: 7px;
+    margin: 5px;
+    border-radius: 7px;
+    font-size: larger;
+}
+
+.content-sidebar:hover{
+    background-color: #de7b9c;
+    color: beige;
+}
+
+.news-click, .discover-click{
+    display: none;
+    flex-direction: column;
+}
+
+.subcontent-sidebar{
+    margin-left: 10px;
+}
+
+.playnow-sidebar{
+    padding: 3%;
+    width: 450px;
+    margin: 15px;
+    background-color: #de7b9c;  /* Green background */
+    color: white;  /* White text */
+    border: none;
+    border-radius: 10px;  /* Rounded corners */
+    cursor: pointer;  /* Mouse pointer on hover */
+    transition:  0.2s ease;
+    font-size: 1rem;
+}
+.playnow-sidebar:hover{
+    color:#6e384a;
+}
+
+
+
+/* RESPONSIVE web */
+@media (max-width: 992px){
+    .riotgames-menu {
+        display: none !important;
+    } 
+    .icon-button{
+        display: none !important;
+    }
+    .responsive-header{
+        display: flex;
+    }
+}
+
+@media (max-width: 640px){
+    .sidebar{
+        width: 97%;
+    }
+}
+
+@media (max-width: 1180px){
+    .riotgames-click{
+        overflow-y: auto;
+        overflow-x:visible;
+        height: 87%;
+    }
+    .riotgames-click-image{
+        display: none;
+
+    }
+    .riotgames-click-content{
+        width: 100%;
+        height: 60%;
+    }
+}
+
+
+/*-------------------------------------------------------- SECTION 2--------------------------------------------------- */
+
+.featurednews{
+    display: flex;
+    flex-direction: column;
+    width: 94%;
+    margin: 3%;
+    height: 80vh;
+}
+
+.featurednews-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#featurednews{ /*chữ*/
+    font-style: oblique;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    color: rgb(228, 140, 154);
+}
+
+.swiper{
+    width: 100%;
+    height: 90%;
+}
+
+
+.swiper-button-next, .swiper-button-prev {
+    color: black;
+}
+
+/* Thanh tiến trình */
+.swiper-pagination-progressbar {
+    background: #ccc;
+}
+.swiper-pagination-progressbar-fill {
+    background: rgb(244, 105, 212) !important;
+}
+
+.featurednews-banner{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container-infor{
+    width: 29%;
+    max-height: 250px; /* Không cho cao hơn */
+    object-fit: cover;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+
+.container-img{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-featured {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+}
+
+.container-infor:hover{
+    .img-featured{
+        transform: scale(1.1);
+    }
+}
+
+.external-link{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+    font-size: 60%;
+    background-color: #de7b9c;
+    border-top-left-radius: 10px;
+    padding: 10px;
+}
+
+.container-detail{
+    margin-top: 10px;
+    color:rgb(228, 140, 154);
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+.featured-title{
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.swiper-pagination{
+    top: 96% !important;
+    height: 2px !important;
+    width: 85% !important;
+}
+.swiper-button-next::after {
+    display: none; /* Ẩn icon mặc định */
+}
+.swiper-button-prev::after {
+    display: none; /* Ẩn icon mặc định */
+}
+
+.swiper-button-next{
+    top: 96%;
+}
+.swiper-button-prev{
+    top: 96%;
+    left: 88%;
+}
+
+
+/* --------------------------------------SECTION 3 ------------------------------------------------*/
+.champion {
+    /* background: radial-gradient(farthest-corner, rgba(255, 182, 193, 1) 20%, rgba(255, 182, 193, 0) 80%); */
+    display: flex;
+    padding: 3%;
+    padding-top: 0;
+    width: 94%;
+    justify-content:space-between;
+    letter-spacing: 2px;
+}
+
+.champion-content{
+    width: 50%;
+    position: relative;
+}
+
+.champion-descript{
+    width: 50%;
+}
+
+.champion-img{
+    width: 100%;
+    justify-self: center;
+}
+
+.champion-song{
+    text-align: center;
+}
+
+
+.champion-logo{
+    display: flex;
+    height: 25%;
+    padding-top: 30px;
+}
+
+.champion-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.champion-icon img{
+    width: 65px;
+}
+
+.champion-icon-name{
+    text-align: center;
+    color:rgb(207, 194, 101)
+}
+
+.champion-icon{
+    transition: 0.3s ease;
+}
+
+.champion-icon:hover {
+    transform: scale(1.1);
+}
+
+.choose-your, .champion-word, .whether, .champion-button-container{
+    text-align: center;
+    padding: 2% 0;
+    color: #de7b9c;
+}
+
+.champion-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+    transition: 0.3s ease;
+}
+
+.champion-button{
+    padding: 3%;
+    background-color: #ef94db;  
+    color: white;  
+    border: none;
+    cursor: pointer; 
+    transition:  0.3s ease;
+    font-size: 1rem;
+    width:fit-content ;
+}
+.button1{
+    background-color: rgb(221, 181, 128);
+}
+.button1:hover{
+    background-color:  rgb(231, 205, 172);
+    color: #6e384a;
+}
+.button2:hover{
+    background-color:  #f1bae5;
+    color: #6e384a;
+}
+
+.choose-your{
+    padding-top: 100px;
+}
+
+.choose-your, .whether{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    letter-spacing: normal;
+}
+
+.whether{
+    font-size: 1.3vw;
+}
+
+.champion-word{
+    font-size: 6vw;
+    letter-spacing: normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+}
+
+.swiper-2{
+    position: unset;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1024px) {
+    .champion{
+        flex-direction: column;
+    }
+    .champion-content{
+        width: 100%;
+    }
+    .champion-descript{
+        padding-top: 20px;
+        width: 100%;
+    }
+    .choose-your{
+        padding-top: 0;
+        font-size: 1.3rem;
+    }
+    .champion-word{
+        font-size: 3.5rem;
+    }
+    .whether{
+        font-size: 1.1rem;
+    }
+    .swiper-pagination{
+        top: 105% !important;
+    }
+    .swiper-button-next{
+        top: 105%;
+    }
+    .swiper-button-prev{
+        top: 105%;
+    }
+}
+
+@media (max-width: 600px) {
+    .champion-button-container{
+        flex-direction: column;
+    }
+    .champion-button{
+        width: 100%;
+    }
+}
+
+
+
+/* ------------------------------------SECTION 4 --------------------------------*/
+.slay-with-style{
+    background-image: url("../../assets/images/slayBackground.jpg");
+    background-size:cover;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    letter-spacing: 2px;
+    
+}
+
+
+.slay-img{
+    width: 50%;
+}
+
+.slay-content{
+    color:rgb(230, 216, 216);
+    padding: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.slay-with, .multiple-ways-to{
+    font-style:oblique;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.style, .play{
+    font-style:oblique;
+    font-size: 4.3rem;
+    font-weight: 900;
+}
+
+.make, .whether-you{
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.slay-button, .multiple-button{
+    margin: 15px;
+    margin-top: 35px;
+    padding: 15px;
+    font-size: 20px;
+    color:#d87093;
+    border: none;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.slay-button:hover, .multiple-button:hover{
+    background-color:rgb(215, 230, 243);
+    border: none;
+    color:#dc507f;
+}
+
+
+/* RESPONSIVE  section 4 - 5 */
+@media (max-width: 1020px) {
+    .slay-with-style{
+        flex-direction: column-reverse;
+    }
+    .make{
+        text-align: center;
+    }
+    .slay-with-style-content, .multiple-ways{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .slay-with{
+        margin-top: 40px;
+    }
+    .mul-detail{
+        font-size: 2vw !important;
+    }
+    .mul-name{
+        font-size: 4vw !important;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .slay-button, .multiple-button{
+        width: 90%;
+    }
+    .slay-with{
+        margin-top: 40px;
+    }
+    .mul-detail{
+        font-size: 3.3vw !important;
+    }
+    .mul-name{
+        font-size: 4vw !important;
+    }
+}
+
+
+
+/* -------------------------------SECTION 5---------------------------------- */
+.multiple-ways{
+    display: flex;
+    background-image: url("../../assets/images/summonerBackground.jpg");
+    background-size: cover;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+.multiple-demos{
+    width: 50%;
+    margin: 20px;
+
+}
+.container-multiple-video{
+    width: 85%;
+    border-radius: 50%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+    outline: #dc507f solid 1px;
+    outline-offset: 20px;
+}
+
+.multiple-ways-video{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.multiple-ways-content{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.multiple-img-container{
+    display: flex;
+    margin: 20px 0;
+}
+
+.multiple-img{
+    margin: 6px;
+    height: 40%;
+}
+.multiple-img-name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+}
+.multiple-name{
+    height: 30%;
+    padding-top: 10px;
+}
+
+
+
+
+/*------------------------------------------------------ SECTION 6 ------------------------------------------- */
+.last-video{
+    width: 100%;
+    object-fit: cover;
+    min-height: 100vh;
+    position: relative;
+
+}
+
+.playforfree{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,0);
+    padding: 25px 20px;
+    background-color: #d87093;
+    border: none;
+    width: 180px;
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.3s ease;
+    font-size:medium;
+}
+
+.playforfree:hover{
+    background-color: #db90a9;
+    color: #6e384a;
+}
+
+.container-last-video{
+    position: relative;
+    background-color: #f097b5;
+
+}
+
+
+
+/*-------------------------------- SECTION 7 --------------------------*/
+.riot-footer-links{
+    background-color: #f097b5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px;
+}
+.riot-links-name{
+    padding: 10px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.riot-links-name:hover{
+    background-color: #e187a5;
+    border-radius: 7px;
+}
+
+.riot-infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d87093;
+}
+
+.riot-link-logo{
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 25px;
+}
+
+.link-logo{
+    background-color: #db90a9;
+    padding: 7px;
+    border-radius: 6px;
+}
+
+.footer-riot-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-infor{
+    color: white;
+    letter-spacing: 1px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 0 200px;
+}
+
+
+
+/* --------RESPONSIVE----- */
+@media (max-width: 1020px) {
+    .riot-footer-links{
+        flex-direction: column;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    .riot-footer-links{
+        flex-direction: column;
+    }
+    
+    .footer-infor{
+        padding: 0 50px;
+    }
+}
