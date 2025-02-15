@@ -122,10 +122,8 @@ function clearInputSidebar(){
 function display_hide_NewsSidebar(){
     const newsIcon = document.querySelector("#news-icon");
     const newsClick = document.querySelector(".news-click");
-    console.log(newsClick)
     if(newsIcon.className == "fa-solid fa-caret-down"){
         newsClick.style.display = "flex";
-        console.log("jj");
         newsIcon.className = "fa-solid fa-caret-up";
     }
     else{
@@ -256,7 +254,6 @@ listItemImg.forEach(item => {
         let detail = data.getAttribute("data-detail");
         let backgroundSrc = data.getAttribute("data-background");
         
-        console.log(backgroundSrc);
 
         sourceTag.setAttribute("src", vidSrc);
         mulVid.load(); 
@@ -273,3 +270,8 @@ listItemImg.forEach(item => {
 
     });
 });
+
+
+function openNewTab() {
+    window.open("http://127.0.0.1:5500/pages/index.html", "_blank");
+}
