@@ -273,5 +273,5 @@ listItemImg.forEach(item => {
 
 
 function openNewTab() {
-    window.open("http://127.0.0.1:5500/index.html", "_blank");
+    window.open("https://tphuongin.github.io/landing-page/", "_blank");
 }
