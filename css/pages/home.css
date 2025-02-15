@@ -843,7 +843,7 @@ a{
 /* -------------------------------SECTION 5---------------------------------- */
 .multiple-ways{
     display: flex;
-    background-image: url("/assets/images/summonerBackground.jpg");
+    background-image: url("../../assets/images/summonerBackground.jpg");
     background-size: cover;
     padding: 20px 0;
     letter-spacing: 2px;
